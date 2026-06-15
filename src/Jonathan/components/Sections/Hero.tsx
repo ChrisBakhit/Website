@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {FC, memo} from 'react';
 import {TypeAnimation} from 'react-type-animation';
-
+import JonPicture from '../image/JonPicture.png';
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
@@ -14,6 +14,15 @@ const Hero: FC = memo(() => {
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <Image
+          alt="background"
+          layout="fill"
+          objectFit="cover"
+          placeholder="blur"
+          src={JonPicture}
+        />
+      </div>
       <div className="relative flex h-screen w-screen items-center justify-center">
         <Image
           alt={`${name}-image`}

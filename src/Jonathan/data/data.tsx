@@ -1,5 +1,4 @@
 import {AcademicCapIcon, CalendarIcon, DownloadIcon, MapIcon, SparklesIcon} from '@heroicons/react/outline';
-
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -8,12 +7,9 @@ import churchImg from '../images/Jonathan/Church.jpg';
 import covidImg from '../images/Jonathan/Covid.jpg';
 import DoItImg from '../images/Jonathan/DOIT.png';
 import heroImage from '../images/Jonathan/Moon.jpg';
-import testimonialImage from '../images/Jonathan/Space.png';
 import UnityImg from '../images/Jonathan/Unity.jpg';
 import DiscordImg from '../images/Jonathan/Discord.png';
-import portImg from '../images/portfolio/portfolio-12.jpg';
 import HopMC from '../images/Jonathan/HopMC.jpg';
-
 
 import {
   About,
@@ -29,17 +25,11 @@ import {
   TimelineItem,
 } from './dataDef';
 
-/**
- * Page meta data
- */
 export const homePageMeta: HomepageMeta = {
   title: 'Bakhit | Software Engineering',
-  description: "Christian and Jonathan Bakhit's personal website",
+  description: "Jonathan Bakhit's personal website",
 };
 
-/**
- * Section definition
- */
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
@@ -54,24 +44,16 @@ export const SectionId = {
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
 
-/**
- * Hero section
- */
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I am Jonathan Bakhit.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am a Senior at <strong className="text-stone-100">Johns Hopkins University</strong>. Currently, I am envisioning solutions to help 
-        make AI technology more accessible to the general public and to use AI to help solve real world problems.
+        Software Engineer focused on Artificial Intelligence, backend systems, and distributed architectures. Currently pursuing a Master of Science in Computer Science at Georgia Tech.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I've worked on a variety of projects ranging from <strong className="text-stone-100">web development</strong> to <strong className="text-stone-100">machine learning</strong>. 
-        I hope to continue to learn and grow as a software engineer and to become a reliable and valuable member of any team.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm curently working on a new initative, <a href="https://skilllink.org/" className="text-stone-100"><strong className = "text-stone-100">SkillLink,</strong></a> which is a platform that allows students and job seekers to connect with mentors and professionals in their field of interest.
+        Experience spanning industry, research, and large-scale system design, with a focus on scalable APIs, machine learning systems, and performance optimization.
       </p>
     </>
   ),
@@ -94,280 +76,182 @@ export const headerData: Header = {
   returnButton: 'Home',
 };
 
-/**
- * About section
- */
 export const aboutData: About = {
   profileImageSrc: [profilepic],
-  description: `Self-Driven and energetic computer science student with a desire to learn and expand his horizons. Over 10 years of experience with a repertoire of knowledge in a lot of different computer-science adjacent fields. Worked in research, industry, and community-based projects which have impacted thousands of people.  `,
+  description: `Software engineer with experience building and scaling backend systems, distributed architectures, and AI-driven platforms across industry and research environments.`,
   aboutItems: [
     {label: 'Age', text: '21', Icon: CalendarIcon},
     {label: 'Location', text: 'Houston, TX', Icon: MapIcon},
-    {label: 'Interests', text: 'Astronomy, Hiking, Personal Training', Icon: SparklesIcon},
-    {label: 'College', text: 'Johns Hopkins University', Icon: AcademicCapIcon},
+    {label: 'Interests', text: 'AI Systems, Distributed Systems, Robotics', Icon: SparklesIcon},
+    {label: 'Education', text: 'Georgia Tech / Johns Hopkins University', Icon: AcademicCapIcon},
   ],
 };
 
-/**
- * Skills section
- */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'Arabic',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 2,
-      },
-    ],
-  },
   {
     name: 'Programming Languages',
     skills: [
-      {
-        name: 'Java',
-        level: 10,
-      },
-      {
-        name: 'Python',
-        level: 10,
-      },
-      {
-        name: 'JavaScript',
-        level: 9,
-      }, 
-      {
-        name: 'C / C++',
-        level: 8,
-      },
-      {
-        name: 'HTML',
-        level: 7,
-      }, {
-        name: 'SQL',
-        level: 5,
-      }
+      {name: 'Java', level: 10},
+      {name: 'Python', level: 10},
+      {name: 'JavaScript', level: 9},
+      {name: 'C++', level: 8},
+      {name: 'C#', level: 8},
+      {name: 'Go', level: 7},
+      {name: 'SQL', level: 7},
     ],
   },
   {
-    name: 'Fullstack development',
+    name: 'Backend & Systems',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'React',
-        level: 8,
-      },
-      {
-        name: 'Express',
-        level: 8,
-      },
-      {
-        name: 'MongoDB',
-        level: 7,
-      },
+      {name: 'Node.js', level: 9},
+      {name: 'Express', level: 9},
+      {name: 'Distributed Systems', level: 8},
+      {name: 'System Design', level: 9},
+      {name: 'Docker', level: 8},
     ],
   },
   {
-    name: 'Miscellaneous',
+    name: 'AI / ML',
     skills: [
-      {
-        name: 'Unity',
-        level: 7,
-      },
-      {
-        name: 'Android Studio',
-        level: 7,
-      },
-      {
-        name: 'Flutter',
-        level: 5,
-      },
+      {name: 'Machine Learning', level: 9},
+      {name: 'NLP', level: 8},
+      {name: 'LLMs', level: 8},
+      {name: 'AI Agents', level: 8},
+      {name: 'Data Pipelines', level: 8},
+    ],
+  },
+  {
+    name: 'Frontend & Tools',
+    skills: [
+      {name: 'React', level: 9},
+      {name: 'HTML/CSS', level: 8},
+      {name: 'Unity', level: 7},
+      {name: 'Firebase', level: 7},
+      {name: 'AWS', level: 8},
     ],
   },
 ];
 
-/**
- * Portfolio section
- */
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'DoIt',
-    description: 'A "Social Media" app that allows users to chat with their friends and challenge them to do "tasks". (React, mongoDB, Node.js, Express)',
+    description: 'Social challenge platform built with React, Node.js, MongoDB, Express.',
     url: 'https://doit-oose.herokuapp.com/',
     image: DoItImg,
   },
   {
-    title: 'Saint Mary & Archangel Michael Church Website',
-    description: 'A website for a local church in Houston, TX. (React)',
+    title: 'Church Website',
+    description: 'Full-stack community website built in React.',
     url: 'https://testingwebsiteforchurch.netlify.app/',
     image: churchImg,
   },
   {
     title: 'Delineo Modeling Project',
-    description:
-      "The research project I've been fortunate to help research and develop. We aim to create a sandbox for future epidemiological research. We are currently working on a simulation of the COVID-19 pandemic. In particular, I've worked on the website, developing the Python package, and handling backend communications.",
+    description: 'Large-scale epidemiological simulation platform.',
     url: 'https://covidweb.isi.jhu.edu/',
     image: covidImg,
   },
   {
-    title: 'AnyTown, USA',
-    description:
-      "This Unity Project was a team project to implement a 'sims' like simulation of COVID to support Delineo.",
+    title: 'AnyTown COVID Simulation',
+    description: 'Unity-based simulation for epidemiological modeling.',
     url: 'https://hub.jhu.edu/2021/08/12/anytown-usa-simulator/',
     image: UnityImg,
   },
   {
-    title: 'Gemini Discord Bot V2',
-    description:
-      'A discord bot that provides useful information to the user about watched stocks, website downtimes, and more.',
+    title: 'Discord Bot',
+    description: 'Automation bot for stocks, alerts, and system monitoring.',
     url: 'https://github.com/ChrisBJHU/DiscordBot',
     image: DiscordImg,
-  },  
-  {
-    title: 'Covid Tracker (HopHacks 2020)',
-    description:
-      'A 48 hour hackathon project that aimed to give users information from the JHU dashboard using an API and providing a private tracing list. (Wordpress, Python)',
-    url: 'https://github.com/ChrisBJHU/CovidTracker2020',
-    image: portImg,
   },
   {
     title: 'HopMC',
-    description:
-      'A Minecraft Server where I worked on the backend and website. (Java, JSON)',
+    description: 'Minecraft server backend and web infrastructure.',
     url: 'https://studentaffairs.jhu.edu/dmc/hopmc/',
     image: HopMC,
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
 export const education: TimelineItem[] = [
   {
-    date: 'Aug 2020 - May 2024',
+    date: '2026 - Present',
+    location: 'Georgia Institute of Technology',
+    title: 'M.S. Computer Science',
+    content: <p className="text-sm text-neutral-800"></p>,
+  },
+  {
+    date: '2020 - 2024',
     location: 'Johns Hopkins University',
-    title:
-      'B.S. Computer Science, Applied Mathematics and Statistics' +
-      '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0 ',
-    content: <p className="text-sm text-neutral-800">
-        Minor(s) in Robotics, Psychology, Mathematics
-      </p>,
+    title: 'B.S. Computer Science, Applied Mathematics & Statistics',
+    content: <p className="text-sm text-neutral-800">Minors: Robotics, Psychology, Mathematics</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Aug 2023 - Present',
-    location: 'FFU | SkillLink',
-    title: 'Co-Founder',
+    date: 'March 2026 - Present',
+    location: 'Dynamic Active',
+    title: 'Senior Software Engineer',
     content: (
       <ul className="list-disc">
-        <li>Spearheaded the development of a dynamic, personalized website and a robust backend system, seamlessly managing client payments, communication channels, and administrative controls</li>
-        <li>Engineered a personalized website and backend handling client payments, communication, and administration control</li>
+        <li>Scaled full-stack systems improving performance by 30% and enabling 2–3x user growth</li>
+        <li>Built AI-driven automation systems reducing manual processing by 40%+ and improving accuracy by 25%</li>
+        <li>Optimized backend architecture reducing API latency by 35%</li>
       </ul>
     ),
   },
   {
-    date: 'Aug 2022 - Present',
-    location: 'Johns Hopkins University',
-    title: 'Head PILOT Leader',
+    date: 'Oct 2024 - March 2026',
+    location: 'United States Patent and Trademark Office',
+    title: 'Software Engineering Expert',
     content: (
       <ul className="list-disc">
-        <li>Managed a team of 3 PILOT leaders to provide support for 16 students taking the Gateway Computing course, allowing students to pass the course with a B+ or higher</li>
+        <li>Analyzed 1,000+ AI/software patents improving prior art evaluation efficiency by 40%</li>
+        <li>Evaluated distributed systems and AI architectures for scalability and correctness</li>
+        <li>Improved review accuracy by 30% through structural system analysis</li>
       </ul>
     ),
-
   },
-  
+  {
+    date: 'March 2023 - May 2024',
+    location: 'SkillLink',
+    title: 'Software Engineer',
+    content: (
+      <ul className="list-disc">
+        <li>Built core web platform enabling MVP launch and early adoption</li>
+        <li>Designed scalable full-stack architecture improving stability by 30%</li>
+        <li>Increased development velocity by 35% through modular system design</li>
+      </ul>
+    ),
+  },
   {
     date: 'Jan 2021 - Mar 2023',
-    location: 'Delineo Disease Modeling',
-    title: 'Fullstack Software Engineer & Team Leader',
+    location: 'Delineo Modeling Project',
+    title: 'Software Engineer & Team Lead',
     content: (
       <ul className="list-disc">
-        <li> Managed team of full-stack undergraduates to develop Delineo's robust front-end and back-end for easy navigation of website.</li>
-        <li> Created the AnyTown simulation, a visual for COVID-19 leveraging Unity, C#, and React, allowing Delineo to be interesting to all-age groups</li>
-        <li>
-          Supported Student Leader in working with Microsoft Research and AWS to develop a cloud-based simulation for Delineo as well as updates to Microsoft's COVID UI Dashboard
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'June 2022 - Present',
-    location: 'Saint Mary and Archangel Michael Church',
-    title: 'Web Developer',
-    content: (
-      <ul className="list-disc">
-        <li> Designed and developed a website for Saint Mary Community Church using React and CSS </li>
-        <li> Developed a robust backend which allows the church to easily update the website with new information and keeps the website secure </li>
-        <li> Developed a mobile-friendly website that is easy to navigate and allows users to easily access information about the church, greatly increasing the usefulness of the website </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'Aug 2022 - Present',
-    location: 'Johns Hopkins University',
-    title: 'PILOT Leader',
-    content: (
-      <ul className="list-disc">
-        <li>
-          {' '}
-          Served as a student resource for students taking the Gateway Computing course, providing instruction for 5
-          students and allowing students to pass the course with a B+ or higher
-        </li>
-        <li>
-          {' '}
-          Prepared lesson plans with other PILOT leaders weekly to provide students with the necessary skills to be
-          successful in the course and in other future courses
-        </li>
+        <li>Built simulation platform supporting 50,000+ sessions and 1M+ data points per run</li>
+        <li>Reduced execution time by 18% and latency by 22%</li>
+        <li>Led 10+ member research team and improved release cycles by 5 weeks</li>
       </ul>
     ),
   },
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
-    {
-      name: 'Twelfth Doctor',
-      text: 'Hey, you know, maybe there’s no point to any of this at all. But it’s the best I can do. So I’m going to do it. And I will stand here doing it until it kills me. And you’re going to die too! Some day.. And how will that be? Have you thought about it? What would you die for? Who I am is where I stand. Where I stand is where I fall.',
-    },
-  ],
-};
-
-/**
- * Contact section
- */
 
 export const contact: ContactSection = {
   headerText: 'Contact Me',
   description:
-    'I am currently looking for new opportunities. My inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!',
+    'Open to new opportunities and collaborations. Feel free to reach out.',
   items: [
     {
       type: ContactType.Email,
-      text: 'jbakhit1@jh.edu',
-      href: 'mailto:jbakhit1@jh.edu',
+      text: 'jonathanbakhit02@gmail.com',
+      href: 'mailto:jonathanbakhit02@gmail.com',
     },
     {
       type: ContactType.Location,
       text: 'Houston, TX, USA',
-      href: 'https://www.google.ca/maps/place/Houston,+TX/@29.7559698,-95.3573194,3a,75y,90t'
+      href: 'https://www.google.ca/maps/place/Houston,+TX/@29.7559698,-95.3573194',
     },
     {
       type: ContactType.Instagram,
@@ -376,15 +260,12 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'Jonathan Bakhit',
+      text: 'syncre02',
       href: 'https://github.com/syncre02',
     },
   ],
 };
 
-/**
- * Social items
- */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/syncre02'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jonathanbakhit/'},
